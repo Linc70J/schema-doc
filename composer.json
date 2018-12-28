@@ -1,0 +1,28 @@
+{
+    "name": "linc70j/schema-doc",
+    "description": "Export mysql schema to excel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "linc",
+            "email": "qulamj@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Linc70j\\SchemaDoc\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Linc70j\\SchemaDoc\\SchemaDocServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "doctrine/dbal": "^2.9",
+        "maatwebsite/excel": "^3.1"
+    }
+}
